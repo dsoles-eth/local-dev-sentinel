@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "local-dev-sentinel"
+version = "0.1.0"
+description = "A cross-platform CLI tool that continuously audits local development environments for security vulnerabilities, dependency conflicts, and configuration drift."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["python", "click", "pydantic", "pathlib", "subprocess"]
+dependencies = ["__future__", "click", "colorama", "pydantic", "requests"]
+
+[project.urls]
+Homepage = "https://github.com/{GITHUB_USERNAME}/local-dev-sentinel"
